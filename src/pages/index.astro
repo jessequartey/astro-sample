@@ -1,11 +1,57 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <main class="min-h-screen bg-gradient-to-b from-purple-900 to-black text-white">
+    <!-- Hero Section -->
+    <div class="container mx-auto px-4 py-20 text-center">
+      <h1 class="text-6xl font-bold mb-6 animate-bounce">
+        Welcome to Jokers Town 🃏
+      </h1>
+      <p class="text-xl mb-8 text-purple-200">
+        Your one-stop destination for the funniest jokes on the planet!
+      </p>
+      <button class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105">
+        Get a Random Joke
+      </button>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-purple-800/50 p-6 rounded-lg text-center hover:bg-purple-700/50 transition-all">
+          <div class="text-4xl mb-4">😂</div>
+          <h3 class="text-xl font-bold mb-2">Daily Jokes</h3>
+          <p class="text-purple-200">Fresh jokes delivered daily to keep you laughing</p>
+        </div>
+        <div class="bg-purple-800/50 p-6 rounded-lg text-center hover:bg-purple-700/50 transition-all">
+          <div class="text-4xl mb-4">🎭</div>
+          <h3 class="text-xl font-bold mb-2">All Categories</h3>
+          <p class="text-purple-200">From dad jokes to knock-knocks, we've got it all</p>
+        </div>
+        <div class="bg-purple-800/50 p-6 rounded-lg text-center hover:bg-purple-700/50 transition-all">
+          <div class="text-4xl mb-4">🌟</div>
+          <h3 class="text-xl font-bold mb-2">Family Friendly</h3>
+          <p class="text-purple-200">Clean jokes suitable for all ages</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="container mx-auto px-4 py-16 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Start Laughing?</h2>
+      <p class="text-xl mb-8 text-purple-200">
+        Join thousands of happy users who get their daily dose of humor from Jokers Town
+      </p>
+      <div class="space-x-4">
+        <button class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105">
+          Sign Up Free
+        </button>
+        <button class="border-2 border-purple-500 hover:border-purple-400 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </main>
 </Layout>
