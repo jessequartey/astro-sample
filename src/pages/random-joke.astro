@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RandomJoke from '../components/RandomJoke';
+---
+
+<Layout>
+  <main class="min-h-screen bg-gradient-to-b from-purple-900 to-black text-white">
+    <div class="container mx-auto px-4 py-12">
+      <div class="text-center mb-12">
+        <a 
+          href="/" 
+          class="inline-block text-purple-300 hover:text-purple-200 mb-8"
+        >
+          ← Back to Home
+        </a>
+        <h1 class="text-4xl font-bold mb-4">
+          Random Joke Generator 🃏
+        </h1>
+        <p class="text-xl text-purple-200">
+          Get ready to laugh with our hand-picked collection of jokes!
+        </p>
+      </div>
+      
+      <RandomJoke client:load />
+    </div>
+  </main>
+</Layout>
